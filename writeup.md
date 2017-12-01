@@ -42,7 +42,10 @@ You're reading it!
 ![image2](misc-image/image11.PNG)
 
 #### 3. Complete Exercise 3 Steps.  Features extracted and SVM trained.  Object recognition implemented.
-![image3](misc-image/image12.PNG)
+![image3](misc-image/image12.PNG)  
+The confusion matrix of my svm model is below;  
+![image13](misc-image/image13.PNG)
+
 
 ### Pick and Place Setup
 
