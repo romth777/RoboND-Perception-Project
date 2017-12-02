@@ -51,12 +51,12 @@ rosrun pr2_robot detection_node.py
 ![image3](misc-image/image12.PNG)  
 The confusion matrix of my svm model is below;  
 ![image13](misc-image/image13.PNG)  
-![image14](misc-image/image14.PNG)  
+![image14](misc-image/image14.png)  
 
 #### Result of detection
-![image15](misc-image/image15.PNG)  
-![image16](misc-image/image16.PNG)  
-![image17](misc-image/image17.PNG)  
+![image15](misc-image/image15.png)  
+![image16](misc-image/image16.png)  
+![image17](misc-image/image17.png)  
 
 
 ### Pick and Place Setup
