@@ -45,6 +45,12 @@ You're reading it!
 ![image3](misc-image/image12.PNG)  
 The confusion matrix of my svm model is below;  
 ![image13](misc-image/image13.PNG)
+![image14](misc-image/image14.PNG)
+
+#### Result of detection
+![image15](misc-image/image15.PNG)
+![image16](misc-image/image16.PNG)
+![image17](misc-image/image17.PNG)
 
 
 ### Pick and Place Setup
@@ -61,4 +67,15 @@ Here is the snapshot of my PR2 doing.
 ![image11](misc-image/image8.PNG)
 ![image12](misc-image/image9.PNG)
 
+### Discussion
+#### What we worked
+In this project, I learned to extract feature quantities from point cloud data and cluster them.
+Specifically, we filtered the point cloud data to remove the noise, and separated the desk and the object using the RANSAC algorithm. 
+Next, we clustered the point cloud data of the object for each object and applied each cluster to the SVM to identify what the object is. 
+Through these, I learned how to identify objects in 3 - D space, and I was able to experiment how to actually implement them.
 
+#### Future improvement
+ * SVM identification accuracy is not yet perfect, so further training is required. For example, you need to consider using other features and using it.
+ * Although I added a noise filter this time, it is not possible to consider the robustness that can correspond to various noise environments. In order to make a more robust system, it is necessary to think about other noise factors. For example, I think that it is necessary to consider irregular reflection from the surface of the object and the influence of surrounding scattered light.
+ * This time I used the RANSAC algorithm to detect the desk, but I need to consider what to do if the desk is slightly slanted or the field of view is diagonal. In order to consider such inclination, it may be good to adjust parameters so that some inclination can be ignored, or coordinate conversion of point cloud data if it is within a certain range. Also, it may be good to insert a parallel sensor in the vicinity of the camera and perform processing while considering the tilt of the main unit.
+ 
