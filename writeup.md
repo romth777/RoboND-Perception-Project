@@ -35,37 +35,43 @@
 You're reading it!
 
 ### Exercise 1, 2 and 3 pipeline implemented
+How to run this project is;  
+```
+roslaunch pr2_robot pick_place_project.launch  
+rosrun pr2_robot detection_node.py  
+```
+
 #### 1. Complete Exercise 1 steps. Pipeline for filtering and RANSAC plane fitting implemented.
-![image1](misc-image/image10.PNG)
+![image1](misc-image/image10.PNG)  
 
 #### 2. Complete Exercise 2 steps: Pipeline including clustering for segmentation implemented.  
-![image2](misc-image/image11.PNG)
+![image2](misc-image/image11.PNG)  
 
 #### 3. Complete Exercise 3 Steps.  Features extracted and SVM trained.  Object recognition implemented.
 ![image3](misc-image/image12.PNG)  
 The confusion matrix of my svm model is below;  
-![image13](misc-image/image13.PNG)
-![image14](misc-image/image14.PNG)
+![image13](misc-image/image13.PNG)  
+![image14](misc-image/image14.PNG)  
 
 #### Result of detection
-![image15](misc-image/image15.PNG)
-![image16](misc-image/image16.PNG)
-![image17](misc-image/image17.PNG)
+![image15](misc-image/image15.PNG)  
+![image16](misc-image/image16.PNG)  
+![image17](misc-image/image17.PNG)  
 
 
 ### Pick and Place Setup
 
 #### 1. For all three tabletop setups (`test*.world`), perform object recognition, then read in respective pick list (`pick_list_*.yaml`). Next construct the messages that would comprise a valid `PickPlace` request output them to `.yaml` format.
 Here is the snapshot of my PR2 doing.
-![image4](misc-image/image1.PNG)
-![image5](misc-image/image2.PNG)
-![image6](misc-image/image3.PNG)
-![image7](misc-image/image4.PNG)
-![image8](misc-image/image5.PNG)
-![image9](misc-image/image6.PNG)
-![image10](misc-image/image7.PNG)
-![image11](misc-image/image8.PNG)
-![image12](misc-image/image9.PNG)
+![image4](misc-image/image1.PNG)  
+![image5](misc-image/image2.PNG)  
+![image6](misc-image/image3.PNG)  
+![image7](misc-image/image4.PNG)  
+![image8](misc-image/image5.PNG)  
+![image9](misc-image/image6.PNG)  
+![image10](misc-image/image7.PNG)  
+![image11](misc-image/image8.PNG)  
+![image12](misc-image/image9.PNG)  
 
 ### Discussion
 #### What we worked
