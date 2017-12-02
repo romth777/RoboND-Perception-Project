@@ -56,7 +56,7 @@ def pcl_callback(pcl_msg):
 
     # TODO: Statistical Outlier Filtering
     outlier_filter = pcl_data.make_statistical_outlier_filter()
-    outlier_filter.set_mean_k(50)
+    outlier_filter.set_mean_k(10)
     x = 1.0
     outlier_filter.set_std_dev_mul_thresh(x)
     cloud_filtered = outlier_filter.filter()
@@ -251,7 +251,7 @@ def pr2_mover(object_list):
 
         # TODO: Create a list of dictionaries (made with make_yaml_dict()) for later output to yaml format
         test_scene_num = Int32()
-        test_scene_num.data = 1
+        test_scene_num.data = 3
 
         place_pose.position.x = dict_dropbox[arm_name.data][0]
         place_pose.position.y = dict_dropbox[arm_name.data][1]
